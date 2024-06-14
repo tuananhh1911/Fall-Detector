@@ -1,0 +1,389 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.39.0.0
+Copyright (C) 2023 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Tuan Anh Pham, VNU, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.39.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.21
+Assembler:       Armasm.exe V6.21
+Linker/Locator:  ArmLink.exe V6.21
+Library Manager: ArmAr.exe V6.21
+Hex Converter:   FromElf.exe V6.21
+CPU DLL:         SARMCM3.DLL V5.39.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.2.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+D:\New folder\Test1.uvprojx
+Project File Date:  06/14/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.21', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+MMA8451Q.c(1): warning: In file included from...
+C:/Users/ADMIN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   18 |   *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+      |                                                ^
+C:/Users/ADMIN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   19 |   *                code will be based on direct access to peripheral<92>s registers 
+      |                                                                     ^
+C:/Users/ADMIN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   26 |   *           - Macros to access peripheral<92>s registers hardware
+      |                                            ^
+MMA8451Q.c(2): warning: In file included from...
+./MMA8451Q.h(11): warning: no newline at end of file [-Wnewline-eof]
+   11 | #endif // MMA8451Q_H
+      |                     ^
+MMA8451Q.c(4): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+    4 | void GPIO_Init()
+      |               ^
+      |                void
+MMA8451Q.c(17): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   17 | void I2C1_Init()
+      |               ^
+      |                void
+MMA8451Q.c(94): warning: implicit conversion loses integer precision: 'volatile uint16_t' (aka 'volatile unsigned short') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   94 |         *buffer++ = I2C1->DR;
+      |                   ~ ~~~~~~^~
+MMA8451Q.c(100): warning: no newline at end of file [-Wnewline-eof]
+  100 | }
+      |  ^
+MMA8451Q.c(94): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+   94 |         *buffer++ = I2C1->DR;
+      |          ^~~~~~
+9 warnings generated.
+compiling MMA8451Q.c...
+LCD.c(1): warning: In file included from...
+C:/Users/ADMIN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   18 |   *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+      |                                                ^
+C:/Users/ADMIN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   19 |   *                code will be based on direct access to peripheral<92>s registers 
+      |                                                                     ^
+C:/Users/ADMIN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   26 |   *           - Macros to access peripheral<92>s registers hardware
+      |                                            ^
+LCD.c(2): warning: In file included from...
+./LCD.h(11): warning: no newline at end of file [-Wnewline-eof]
+   11 | #endif // LCD_I2C_H
+      |                    ^
+LCD.c(145): warning: no newline at end of file [-Wnewline-eof]
+  145 | }
+      |  ^
+LCD.c(94): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   94 |     lcd_i2c_write_cmd(LCD_CMD_SET_DDRAM_ADDR | (col + row_offsets[row]));
+      |                                                       ^~~~~~~~~~~
+LCD.c(102): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+  102 |         str++;
+      |         ^~~
+7 warnings generated.
+compiling LCD.c...
+main.c(1): warning: In file included from...
+C:/Users/ADMIN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   18 |   *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+      |                                                ^
+C:/Users/ADMIN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   19 |   *                code will be based on direct access to peripheral<92>s registers 
+      |                                                                     ^
+C:/Users/ADMIN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   26 |   *           - Macros to access peripheral<92>s registers hardware
+      |                                            ^
+main.c(2): warning: In file included from...
+./MMA8451Q.h(11): warning: no newline at end of file [-Wnewline-eof]
+   11 | #endif // MMA8451Q_H
+      |                     ^
+main.c(3): warning: In file included from...
+./LCD.h(11): warning: no newline at end of file [-Wnewline-eof]
+   11 | #endif // LCD_I2C_H
+      |                    ^
+main.c(24): warning: no previous extern declaration for non-static variable 'isFall' [-Wmissing-variable-declarations]
+   24 | volatile bool isFall = false;
+      |               ^
+main.c(24): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   24 | volatile bool isFall = false;
+      |          ^
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h(15): note: expanded from macro 'bool'
+   15 |     #define bool _Bool
+      |                  ^
+main.c(28): warning: no previous extern declaration for non-static variable 'Set' [-Wmissing-variable-declarations]
+   28 | volatile uint8_t Set = 0;//khong chay
+      |                  ^
+main.c(28): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   28 | volatile uint8_t Set = 0;//khong chay
+      |          ^
+main.c(29): warning: no previous extern declaration for non-static variable 'Reset' [-Wmissing-variable-declarations]
+   29 | volatile uint8_t Reset = 0;//khong reset
+      |                  ^
+main.c(29): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   29 | volatile uint8_t Reset = 0;//khong reset
+      |          ^
+main.c(30): warning: no previous extern declaration for non-static variable 'ticks' [-Wmissing-variable-declarations]
+   30 | volatile uint32_t ticks = 0;
+      |                   ^
+main.c(30): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   30 | volatile uint32_t ticks = 0;
+      |          ^
+main.c(65): warning: implicit conversion increases floating-point precision: 'float' to 'double' [-Wdouble-promotion]
+   65 |                         if(sqrt(ax*ax + ay*ay + az*az) > 5.0)
+      |                            ~~~~ ~~~~~~~~~~~~~~^~~~~~~
+main.c(88): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   88 | void SystemClock_Config()
+      |                        ^
+      |                         void
+main.c(101): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  101 |   // Cau hinh cac bo chia AHB, APB1 v<E0> APB2
+      |                                      ^
+main.c(104): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  104 |   RCC->CFGR |= RCC_CFGR_PPRE2_DIV1; // APB2 = HCLK kh<F4>ng chia
+      |                                                      ^
+main.c(112): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  112 | void SysTick_Init() {
+      |                  ^
+      |                   void
+main.c(119): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  119 | void LED_Init() {
+      |              ^
+      |               void
+main.c(123): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  123 |   // Cau h<EC>nh PB0 va PB1 l<E0> output push-pull
+      |           ^
+main.c(123): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  123 |   // Cau h<EC>nh PB0 va PB1 l<E0> output push-pull
+      |                              ^
+main.c(128): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  128 | void toggle_LED1(){
+      |                 ^
+      |                  void
+main.c(133): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  133 | void toggle_LED2() {
+      |                 ^
+      |                  void
+main.c(138): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  138 | void Switch_Init() {
+      |                 ^
+      |                  void
+main.c(144): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  144 |   GPIOA->ODR |= GPIO_ODR_ODR0 | GPIO_ODR_ODR1; // K<ED>ch ho?t pull-up
+      |                                                    ^
+main.c(147): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  147 | void EXTI_Config() {
+      |                 ^
+      |                  void
+main.c(150): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  150 |     // Ket noi ch<E2>n EXTI0 voi ch<E2>n PA0 v<E0> EXTI1 voi ch<E2>n PA1
+      |                  ^
+main.c(150): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  150 |     // Ket noi ch<E2>n EXTI0 voi ch<E2>n PA0 v<E0> EXTI1 voi ch<E2>n PA1
+      |                                    ^
+main.c(150): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  150 |     // Ket noi ch<E2>n EXTI0 voi ch<E2>n PA0 v<E0> EXTI1 voi ch<E2>n PA1
+      |                                               ^
+main.c(150): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  150 |     // Ket noi ch<E2>n EXTI0 voi ch<E2>n PA0 v<E0> EXTI1 voi ch<E2>n PA1
+      |                                                                ^
+main.c(151): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+  151 |     AFIO->EXTICR[0] &= ~(AFIO_EXTICR1_EXTI0 | AFIO_EXTICR1_EXTI1);
+      |                     ~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.c(154): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  154 |     EXTI->IMR |= EXTI_IMR_MR0 | EXTI_IMR_MR1; // K<ED>ch ho?t interrupt cho EXTI0 v<E0> EXTI1
+      |                                                   ^
+main.c(154): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  154 |     EXTI->IMR |= EXTI_IMR_MR0 | EXTI_IMR_MR1; // K<ED>ch ho?t interrupt cho EXTI0 v<E0> EXTI1
+      |                                                                                    ^
+main.c(155): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  155 |     EXTI->FTSR |= EXTI_FTSR_TR0 | EXTI_FTSR_TR1; // C<E0>i d?t ng<E3> xu?ng l<E0>m trigger cho EXTI0 v<E0> EXTI1
+      |                                                      ^
+main.c(155): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  155 |     EXTI->FTSR |= EXTI_FTSR_TR0 | EXTI_FTSR_TR1; // C<E0>i d?t ng<E3> xu?ng l<E0>m trigger cho EXTI0 v<E0> EXTI1
+      |                                                                  ^
+main.c(155): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  155 |     EXTI->FTSR |= EXTI_FTSR_TR0 | EXTI_FTSR_TR1; // C<E0>i d?t ng<E3> xu?ng l<E0>m trigger cho EXTI0 v<E0> EXTI1
+      |                                                                              ^
+main.c(155): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  155 |     EXTI->FTSR |= EXTI_FTSR_TR0 | EXTI_FTSR_TR1; // C<E0>i d?t ng<E3> xu?ng l<E0>m trigger cho EXTI0 v<E0> EXTI1
+      |                                                                                                       ^
+main.c(157): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  157 |     NVIC_EnableIRQ(EXTI0_IRQn); // K<ED>ch ho?t NVIC cho EXTI0
+      |                                     ^
+main.c(158): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  158 |     NVIC_SetPriority(EXTI0_IRQn, 0); // <D0>?t d? uu ti<EA>n cho EXTI0
+      |                                         ^
+main.c(158): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  158 |     NVIC_SetPriority(EXTI0_IRQn, 0); // <D0>?t d? uu ti<EA>n cho EXTI0
+      |                                                        ^
+main.c(159): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  159 |     NVIC_EnableIRQ(EXTI1_IRQn); // K<ED>ch ho?t NVIC cho EXTI1
+      |                                     ^
+main.c(160): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  160 |     NVIC_SetPriority(EXTI1_IRQn, 0); // <D0>?t d? uu ti<EA>n cho EXTI1
+      |                                         ^
+main.c(160): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  160 |     NVIC_SetPriority(EXTI1_IRQn, 0); // <D0>?t d? uu ti<EA>n cho EXTI1
+      |                                                        ^
+main.c(169): warning: use of bitwise '&' with boolean operands [-Wbitwise-instead-of-logical]
+  169 |     if ((++ticksB0 >= 1000) & (Set == 1)) 
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                             &&
+main.c(169): note: cast one or both operands to int to silence this warning
+main.c(175): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+  175 |                         GPIOB->ODR &= ~(1<<0);
+      |                                    ~~ ^~~~~~~
+main.c(177): warning: use of bitwise '&' with boolean operands [-Wbitwise-instead-of-logical]
+  177 |         if ((++ticksB1 >= 500) & (isFall)) 
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                &&
+main.c(177): note: cast one or both operands to int to silence this warning
+main.c(183): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+  183 |                         GPIOB->ODR &= ~(1<<1);
+      |                                    ~~ ^~~~~~~
+main.c(163): warning: no previous prototype for function 'SysTick_Handler' [-Wmissing-prototypes]
+  163 | void SysTick_Handler(void) {
+      |      ^
+main.c(163): note: declare 'static' if the function is not intended to be used outside of this translation unit
+  163 | void SysTick_Handler(void) {
+      | ^
+      | static 
+main.c(187): warning: no previous prototype for function 'EXTI1_IRQHandler' [-Wmissing-prototypes]
+  187 | void EXTI1_IRQHandler(void)//reset
+      |      ^
+main.c(187): note: declare 'static' if the function is not intended to be used outside of this translation unit
+  187 | void EXTI1_IRQHandler(void)//reset
+      | ^
+      | static 
+main.c(193): warning: no previous prototype for function 'EXTI0_IRQHandler' [-Wmissing-prototypes]
+  193 | void EXTI0_IRQHandler(void) //switch set  
+      |      ^
+main.c(193): note: declare 'static' if the function is not intended to be used outside of this translation unit
+  193 | void EXTI0_IRQHandler(void) //switch set  
+      | ^
+      | static 
+main.c(21): warning: no previous extern declaration for non-static variable 'ax' [-Wmissing-variable-declarations]
+   21 | volatile float ax, ay, az;
+      |                ^
+main.c(21): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   21 | volatile float ax, ay, az;
+      |          ^
+main.c(21): warning: no previous extern declaration for non-static variable 'ay' [-Wmissing-variable-declarations]
+   21 | volatile float ax, ay, az;
+      |                    ^
+main.c(21): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   21 | volatile float ax, ay, az;
+      |          ^
+main.c(21): warning: no previous extern declaration for non-static variable 'az' [-Wmissing-variable-declarations]
+   21 | volatile float ax, ay, az;
+      |                        ^
+main.c(21): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   21 | volatile float ax, ay, az;
+      |          ^
+main.c(22): warning: no previous extern declaration for non-static variable 'x' [-Wmissing-variable-declarations]
+   22 | volatile int16_t x, y, z;
+      |                  ^
+main.c(22): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   22 | volatile int16_t x, y, z;
+      |          ^
+main.c(22): warning: no previous extern declaration for non-static variable 'y' [-Wmissing-variable-declarations]
+   22 | volatile int16_t x, y, z;
+      |                     ^
+main.c(22): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   22 | volatile int16_t x, y, z;
+      |          ^
+main.c(22): warning: no previous extern declaration for non-static variable 'z' [-Wmissing-variable-declarations]
+   22 | volatile int16_t x, y, z;
+      |                        ^
+main.c(22): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   22 | volatile int16_t x, y, z;
+      |          ^
+main.c(23): warning: no previous extern declaration for non-static variable 'buffer' [-Wmissing-variable-declarations]
+   23 | uint8_t buffer[6];
+      |         ^
+main.c(23): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   23 | uint8_t buffer[6];
+      | ^
+main.c(25): warning: no previous extern declaration for non-static variable 'buf' [-Wmissing-variable-declarations]
+   25 | char buf[16];
+      |      ^
+main.c(25): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   25 | char buf[16];
+      | ^
+main.c(56): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   56 |                         x = (int16_t)(buffer[0] << 8 | buffer[1]);
+      |                                                        ^~~~~~
+main.c(57): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   57 |                         y = (int16_t)(buffer[2] << 8 | buffer[3]);
+      |                                       ^~~~~~
+main.c(57): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   57 |                         y = (int16_t)(buffer[2] << 8 | buffer[3]);
+      |                                                        ^~~~~~
+main.c(58): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   58 |                         z = (int16_t)(buffer[4] << 8 | buffer[5]);
+      |                                       ^~~~~~
+main.c(58): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   58 |                         z = (int16_t)(buffer[4] << 8 | buffer[5]);
+      |                                                        ^~~~~~
+59 warnings generated.
+compiling main.c...
+RTE/Device/STM32F103C8/system_stm32f10x.c(64): warning: In file included from...
+C:/Users/ADMIN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   18 |   *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+      |                                                ^
+C:/Users/ADMIN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   19 |   *                code will be based on direct access to peripheral<92>s registers 
+      |                                                                     ^
+C:/Users/ADMIN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   26 |   *           - Macros to access peripheral<92>s registers hardware
+      |                                            ^
+RTE/Device/STM32F103C8/system_stm32f10x.c(166): warning: no previous extern declaration for non-static variable 'AHBPrescTable' [-Wmissing-variable-declarations]
+  166 | __I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
+      |             ^
+RTE/Device/STM32F103C8/system_stm32f10x.c(166): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  166 | __I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
+      |     ^
+RTE/Device/STM32F103C8/system_stm32f10x.c(408): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  408 |   tmp = AHBPrescTable[((RCC->CFGR & RCC_CFGR_HPRE) >> 4)];
+      |         ^~~~~~~~~~~~~
+5 warnings generated.
+compiling system_stm32f10x.c...
+linking...
+Program Size: Code=12688 RO-data=832 RW-data=8 ZI-data=1696  
+".\Objects\Test1.axf" - 0 Error(s), 80 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM::CMSIS@5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil::STM32F1xx_DFP@2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/Device/STM32F103C8
+  ./RTE/_Target_1
+  C:/Users/ADMIN/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/ADMIN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@5.6.0
+
+   * Component: Keil::Device:Startup@1.0.0
+      Source file:   Device/Source/system_stm32f10x.c
+      Include file:  RTE_Driver/Config/RTE_Device.h
+      Source file:   Device/Source/ARM/STM32F1xx_OPT.s
+      Source file:   Device/Source/ARM/startup_stm32f10x_md.s
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
